@@ -1,0 +1,621 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    ;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px black;
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--mainColor);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+:root {
+    --mainColor: #0078ff;
+    --secondaryColor: #f5f5f5;
+}
+
+.pop::after {
+    font-size: 25px;
+    content: "";
+    animation-name: ani;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+.navbar ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 10px;
+    top: 100%;
+    width: 0;
+    visibility: hidden;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out ;
+    
+}
+.navbar li .nav-link:hover::before {
+    visibility: visible;
+    width: 80%;
+}
+.navbar li .nav-link:hover .nav-item {
+    visibility: visible;
+    width: 80%;
+}
+
+
+/* .navbar a:hover::before,
+.navbar li:hover>a::before,
+.navbar .active::before {
+    visibility: visible;
+    width: 80%;
+} */
+
+/* .navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+    color: #fff;
+} */
+
+@keyframes ani {
+    0% {
+        content: "| ";
+    }
+
+    1% {
+        content: "designer| ";
+    }
+
+    4% {
+        content: "designe| ";
+    }
+
+    7% {
+        content: "design| ";
+    }
+
+    10% {
+        content: "desig| ";
+    }
+
+    13% {
+        content: "desi| ";
+    }
+
+    16% {
+        content: "des| ";
+    }
+
+    19% {
+        content: "de| ";
+    }
+
+    23% {
+        content: "d| ";
+    }
+
+    25% {
+        content: "| ";
+    }
+
+    26% {
+        content: "Developer|";
+    }
+
+    28.67% {
+        content: "Develope|";
+    }
+
+    31.337% {
+        content: "Develop|";
+    }
+
+    36.67% {
+        content: "Develo|";
+    }
+
+    39.3% {
+        content: "Devel|";
+    }
+
+    42% {
+        content: "Deve|";
+    }
+
+    44.68% {
+        content: "Dev|";
+    }
+
+    47.3% {
+        content: "De|";
+    }
+
+    49% {
+        content: "D|";
+    }
+
+    50% {
+        content: "|";
+    }
+
+    51% {
+        content: "Photographer|";
+    }
+
+    53% {
+        content: "Photographe|";
+    }
+
+    55% {
+        content: "Photograph|";
+    }
+
+    57% {
+        content: "Photograp|";
+    }
+
+    58% {
+        content: "Photogra|";
+    }
+
+    60% {
+        content: "Photogr|";
+    }
+
+    62% {
+        content: "Photog|";
+    }
+
+    64% {
+        content: "Photo|";
+    }
+
+    66% {
+        content: "Phot|";
+    }
+
+    68% {
+        content: "Pho|";
+    }
+
+    70% {
+        content: "Ph|";
+    }
+
+    72% {
+        content: "P|";
+    }
+
+    75% {
+        content: "|";
+    }
+
+    76% {
+        content: "Freelance|";
+    }
+
+    78.67% {
+        content: "Freelanc|";
+    }
+
+    81.367% {
+        content: "Freelan|";
+    }
+
+    84% {
+        content: "Freela|";
+    }
+
+    86.67% {
+        content: "Freel|";
+    }
+
+    89.34% {
+        content: "Free|";
+    }
+
+    92% {
+        content: "Free|";
+    }
+
+    94.67% {
+        content: "Fre|";
+    }
+
+    97.3% {
+        content: "Fr|";
+    }
+
+    99% {
+        content: "F|";
+    }
+
+    100% {
+        content: "|";
+    }
+}
+
+
+#Home {
+    background: url(../img/hero-bg.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*----About------ */
+#About {
+    background-color: var(--secondaryColor);
+}
+
+.about-head {
+    font-size: 30px;
+}
+
+.progress {
+    background-color: #cde1f8;
+    border-radius: 0;
+}
+
+.about-im {
+    border-radius: 5px;
+    width: 80%;
+}
+
+
+
+
+/* -----end-about */
+.layer {}
+
+.home-tit h1 {
+    font-size: 72px;
+}
+
+/* ----our-scores------- */
+.our-scores {
+    padding: 8rem 0;
+    width: 100%;
+    background: url("../img/counters-bg.jpg") center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.scores-layer {
+    left: 0;
+    top: 0;
+    background-color: var(--mainColor);
+}
+
+.o-s-s {
+    padding: 25px;
+    border: 8px solid #cde1f8;
+    border-radius: 50%;
+}
+
+.item-1 {
+    font-size: 32px;
+}
+
+.item {
+    color: #FFFFFF;
+}
+
+.item p {
+    font-size: 32px;
+}
+
+/* ----Services---- */
+#Services {
+    background-color: var(--secondaryColor);
+}
+
+.tit h2 {
+    font-size: 48px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid var(--mainColor);
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.circle .cir {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+#Services .ser-item {
+    transition: 2s;
+}
+
+#Services h2 {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+#Services .tit>h2 {
+    font-size: 48px;
+}
+
+.cir i {
+    font-size: 50px;
+    text-align: center;
+    transform: translateY(50%);
+}
+
+.inner:hover .circle {
+    border: 8px solid #cde1f8;
+    background-color: var(--mainColor);
+
+}
+
+/*----------Portoflio-------------  */
+
+#Portoflio {
+    background-color: #f5f5f5;
+}
+
+.p-s-sp {
+    font-size: 14px;
+    color: var(--mainColor);
+    margin: 0;
+    padding: 0;
+}
+
+.port-cir {
+    width: 40px;
+    height: 40px;
+    border: 2px var(--mainColor) solid;
+    border-radius: 50%;
+}
+
+.port-i {
+    color: var(--mainColor);
+}
+
+.port-cap h2 {
+    color: #1E1E1E;
+    padding: 0;
+    margin: 0;
+    line-height: 2px;
+}
+
+.port-cap h2 {
+    font-size: 1px;
+}
+
+.port-img {
+    overflow: hidden;
+}
+
+.port-img img {
+    transition: transform 1s;
+}
+
+.port-img:hover img {
+    transform: scale(1.3);
+}
+
+#Portoflio .tit h2 {
+    font-size: 48px;
+}
+
+#Portoflio h2 {
+    font-size: 20px;
+    padding: 10px 0px;
+}
+
+#Portoflio .inner {
+    box-shadow: 5px 5px 30px rgba(78, 78, 78, 0.08);
+}
+
+/* ----cursol---- */
+
+
+/* picture img{
+    width: 1000%;
+} */
+#cur {
+    width: 100%;
+    background: url(../img/overlay-bg.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#cur .cur-layer {
+    background-color: var(--mainColor);
+}
+
+.cur-img {
+    width: 15%;
+    opacity: 1;
+}
+
+.line {
+    width: 5%;
+    height: 5px;
+    background-color: var(--mainColor);
+
+}
+
+.carousel-inner {
+    color: #FFFFFF;
+}
+
+.carousel-inner span {}
+
+
+
+
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------Blog--------- */
+#Blog {
+    background-color: #f5f5f5;
+
+}
+
+#Blog a {
+    color: unset;
+    transition: color 1s;
+}
+
+#Blog a:hover {
+    color: var(--mainColor);
+}
+
+.blog-img {
+    width: 15%;
+}
+
+.travel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    background-color: #0078ff;
+    margin: 0px auto;
+    color: #FFFFFF;
+    transform: translateY(-50%);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ----contact---- */
+#Contact {
+    background: url(../img/overlay-bg.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#Contact .container {
+    top: 0px;
+}
+
+#Contact .Cont-layer {
+    position: relative;
+    padding: 5rem;
+    background-color: rgba(0, 122, 255, .75);
+}
+
+.bt {
+    background-color: var(--mainColor);
+    border-radius: 100vh;
+    border: transparent 0px;
+    color: #FFFFFF;
+}
+
+.btn {
+    background-color: var(--mainColor);
+    border-radius: 100vh;
+    border: transparent 0px;
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    color: #FFFFFF;
+}
+
+#Contact h5 {
+    font-size: 32px;
+}
+
+.ll {
+    line-height: 24px;
+    font-size: 20px;
+}
+
+#Contact i {
+    color: var(--mainColor);
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: var(--mainColor) 2px solid;
+    border-radius: 50%;
+}
+
+.icons .icon i {
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width:768px) {
+    .item-style {
+        margin: 30px 0px;
+    }
+
+    #Contact .Cont-layer {
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    color: #FFFFFF;
+    background-color: RGB(0, 98, 211);
+}
+
+footer a {
+    color: #FFFFFF;
+}
